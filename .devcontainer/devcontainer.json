@@ -1,0 +1,20 @@
+{
+    "name": "Python 3.9 Codespace",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "context": "."
+    },
+    // Instead of "settings" and "extensions" at the top level,
+    // we move them under "customizations.vscode".
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "python.defaultInterpreterPath": "/usr/local/bin/python3.9"
+        },
+        "extensions": [
+          "ms-python.python"
+        ]
+      }
+    }
+  }
+  
